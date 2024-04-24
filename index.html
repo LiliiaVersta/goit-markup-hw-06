@@ -68,7 +68,7 @@
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-list">
-            <li class="advantages-list-two">
+            <li class="advantages-list-two ad-list-two">
               <div class="container-advantages-img">
                 <svg class="advantages-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -81,7 +81,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="advantages-list-two">
+            <li class="advantages-list-two ad-list-two">
               <div class="container-advantages-img">
                 <svg class="advantages-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -94,7 +94,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="advantages-list-two">
+            <li class="advantages-list-two ad-list-two">
               <div class="container-advantages-img">
                 <svg class="advantages-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -130,7 +130,7 @@
         <div class="container">
           <h2 class="ourteam-title">Our Team</h2>
           <ul class="ourteam-ul">
-            <li class="section-list">
+            <li class="section-list section-list-two">
               <img
                 class="section-img"
                 srcset="
@@ -176,7 +176,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section-list">
+            <li class="section-list section-list-two">
               <img
                 class="section-img"
                 srcset="./images/TomFord.jpg 1x, ./images/TFmobile2x.jpg 2x"
@@ -219,7 +219,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section-list">
+            <li class="section-list section-list-two">
               <img
                 class="section-img"
                 srcset="
@@ -342,7 +342,10 @@
                       ./images/BankAmobile2x.jpg 2x
                     "
                     media="(min-width: 767px)" />
-                  <img src="./images/BankingApp.jpg" alt="BankingApp"
+                  <img
+                    class="portfolio-img"
+                    src="./images/BankingApp.jpg"
+                    alt="BankingApp"
                 /></picture>
 
                 <p class="overlay-text">
@@ -377,7 +380,10 @@
                       ./images/CashlessPmobile2x.jpg 2x
                     "
                     media="(min-width: 767px)" />
-                  <img src="./images/CashlessPayment.jpg" alt="CashlessPayment"
+                  <img
+                    class="portfolio-img"
+                    src="./images/CashlessPayment.jpg"
+                    alt="CashlessPayment"
                 /></picture>
 
                 <p class="overlay-text">
@@ -412,7 +418,10 @@
                       ./images/MeditationAmobile2x.jpg 2x
                     "
                     media="(min-width: 767px)" />
-                  <img src="./images/MeditationApp.jpg" alt="Meditation"
+                  <img
+                    class="portfolio-img"
+                    src="./images/MeditationApp.jpg"
+                    alt="Meditation"
                 /></picture>
 
                 <p class="overlay-text">
@@ -447,7 +456,10 @@
                       ./images/TaxiSmobile2x.jpg 2x
                     "
                     media="(min-width: 767px)" />
-                  <img src="./images/TaxiService.jpg" alt="TaxiService"
+                  <img
+                    class="portfolio-img"
+                    src="./images/TaxiService.jpg"
+                    alt="TaxiService"
                 /></picture>
 
                 <p class="overlay-text">
@@ -483,6 +495,7 @@
                     "
                     media="(min-width: 767px)" />
                   <img
+                    class="portfolio-img"
                     src="./images/ScreenIllustrations.jpg"
                     alt="ScreenIllustrations"
                 /></picture>
@@ -519,7 +532,10 @@
                       ./images/OnlineCmobile2x.jpg 2x
                     "
                     media="(min-width: 767px)" />
-                  <img src="./images/OnlineCourses.jpg" alt="OnlineCourses"
+                  <img
+                    class="portfolio-img"
+                    src="./images/OnlineCourses.jpg"
+                    alt="OnlineCourses"
                 /></picture>
 
                 <p class="overlay-text">
@@ -616,7 +632,7 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
 
-        <form>
+        <form class="form-window" name="feedback_form" autocomplete="off">
           <div class="form-modal">
             <label for="user-name" class="modal-label">Name</label>
             <div class="modal-wrap">
@@ -684,16 +700,19 @@
         </form>
       </div>
     </div>
-    <div class="mobile-menu">
+    <!-- мобильное меню -->
+    <div class="mobile-menu is-open-menu">
       <button typy="button" class="mobile-close">
-        <svg class="" width="8" height="8">
+        <svg class="mobile-close-icons" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <div>
         <nav>
-          <ul>
-            <li><a href="./index.html" class="mobile-logo">Studio</a></li>
+          <ul class="mobile-ul">
+            <li>
+              <a href="./index.html" class="mobile-logo focus-std">Studio</a>
+            </li>
             <li><a href="" class="mobile-logo">Portfolio</a></li>
             <li><a href="" class="mobile-logo">Contacts</a></li>
           </ul>
@@ -713,36 +732,38 @@
           </ul>
         </address>
       </div>
-      <ul class="icons-list">
-        <li class="icons-item">
-          <a href="" class="icons-link">
-            <svg class="icons-icons" width="16" height="16">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icons-item">
-          <a href="" class="icons-link">
-            <svg class="icons-icons" width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icons-item">
-          <a href="" class="icons-link">
-            <svg class="icons-icons" width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icons-item">
-          <a href="" class="icons-link">
-            <svg class="icons-icons" width="16" height="16">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="menu-icons-conteiner">
+        <ul class="menu-icons-list">
+          <li class="icons-item">
+            <a href="" class="icons-link-menu">
+              <svg class="icons-menu" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-item">
+            <a href="" class="icons-link">
+              <svg class="icons-menu" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-item">
+            <a href="" class="icons-link">
+              <svg class="icons-menu" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-item">
+            <a href="" class="icons-link">
+              <svg class="icons-menu" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
