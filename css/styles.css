@@ -74,7 +74,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-
   padding: 17px 0;
 }
 .header-logo-span {
@@ -617,6 +616,16 @@ p {
   }
 }
 /* Footer */
+.footer-logo-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  /* margin-bottom: 16px; */
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
@@ -632,6 +641,11 @@ p {
 .container-logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 288px;
+  /* margin-bottom: 72px; */
 }
 .footer-content {
   font-weight: 400;
@@ -645,7 +659,10 @@ p {
   display: flex;
   align-items: center;
 } */
-
+.content-media {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
 .footer-media {
   font-weight: 500;
   font-size: 16px;
@@ -653,13 +670,14 @@ p {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: start;
 }
 .footer-ul {
   display: flex;
   gap: 16px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .footer-items {
   width: 40px;
@@ -685,8 +703,11 @@ p {
 }
 /* subscribe */
 .subscribe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 288px;
-  /* margin-left: auto; */
+  /* margin-top: 72px; */
 }
 .text-subs {
   display: block;
@@ -699,6 +720,7 @@ p {
   color: #fff;
 }
 .form-send {
+  flex-direction: column;
   display: flex;
   gap: 24px;
 }
@@ -710,6 +732,7 @@ p {
   color: #fff;
 }
 .footer-input {
+  flex-direction: column;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -717,7 +740,8 @@ p {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 100%;
+  /* width: 264px; */
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -730,7 +754,7 @@ p {
   flex-direction: row;
   border-radius: 4px;
   padding: 8px 24px;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   background: #4d5ae5;
   cursor: pointer;
@@ -767,10 +791,10 @@ p {
   }
   .container-logo {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin-bottom: 0;
     flex-direction: column;
-    margin-right: 24px;
+    margin-right: 120px;
   }
   /* .footer-ul {
     width: 208px;
@@ -782,10 +806,8 @@ p {
     margin-right: auto;
   } */
   .content-media {
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 24px;
-    margin-right: 24px;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
     max-width: 264px;
     margin-bottom: 0;
   }
@@ -794,7 +816,7 @@ p {
     width: 453px;
     height: 80px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: start;
     margin-top: 72px;
   }
@@ -813,22 +835,16 @@ p {
 @media (min-width: 1158px) {
   .footer-section {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 120px 0;
   }
 
   .footer-container {
+    width: 1158px;
     align-items: baseline;
-    flex-direction: row;
-    justify-content: flex-start;
     gap: 0;
-    width: auto;
   }
   .content-media {
-    /* margin-left: 120px; */
-  }
-  .subscribe {
-    /* margin-left: 80px; */
+    margin-right: 80px;
   }
 }
 /* Modal window */
@@ -849,16 +865,12 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
+/* .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 .modal {
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center;
-  justify-content: flex-start; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -968,7 +980,7 @@ p {
   height: 40px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  /* font-size: 12px; */
+
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
@@ -1053,7 +1065,7 @@ p {
   }
   .form-comment-input {
     width: 360px;
-    min-height: 584px;
+    min-height: 120px;
   }
   .form-window {
     align-items: center;
