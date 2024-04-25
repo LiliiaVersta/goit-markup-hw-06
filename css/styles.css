@@ -297,7 +297,6 @@ p {
     max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 36px;
   }
 }
 @media (min-width: 1158px) {
@@ -346,9 +345,7 @@ p {
   flex-direction: column;
   gap: 72px;
 }
-.ad-list-two {
-  margin-bottom: 72px;
-}
+
 .advantages-list .advantages-title {
   font-weight: 700;
   font-size: 36px;
@@ -369,6 +366,11 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+@media (max-width: 767px) {
+  .ad-list-two {
+    margin-bottom: 72px;
+  }
 }
 @media (min-width: 768px) {
   .advantages-section {
@@ -632,7 +634,6 @@ p {
 }
 .logo-web {
   display: inline-block;
-  /* align-self: center; */
 }
 .footer-section {
   background: #2e2f42;
@@ -654,10 +655,7 @@ p {
   color: #f4f4fd;
   max-width: 264px;
 }
-/* .footer-container {
-  display: flex;
-  align-items: center;
-} */
+
 .content-media {
   margin-top: 72px;
   margin-bottom: 72px;
@@ -670,6 +668,7 @@ p {
   color: white;
   margin-bottom: 16px;
   text-align: center;
+  text-align: left;
 }
 .footer-ul {
   display: flex;
@@ -706,7 +705,6 @@ p {
   justify-content: center;
   flex-direction: column;
   width: 288px;
-  /* margin-top: 72px; */
 }
 .text-subs {
   display: block;
@@ -740,7 +738,6 @@ p {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 100%;
-  /* width: 264px; */
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -910,7 +907,6 @@ p {
 
 .modal-text {
   font-weight: 500;
-  /* font-size: 16px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
@@ -1069,19 +1065,20 @@ p {
 /* мобильное меню */
 .mobile-menu {
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   position: fixed;
   top: 0;
   left: 0;
-  padding-left: 16px;
+  /* padding-left: 16px;
   padding-top: 72px;
-  padding-bottom: 40px;
+  padding-bottom: 40px; */
+  padding: 72px 16px 40px 16px;
   width: 100%;
   height: 100%;
   background: #fff;
   z-index: 999;
   visibility: hidden;
-  display: flex;
+  /* display: flex; */
   pointer-events: none;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1090,6 +1087,7 @@ p {
 .is-open-menu {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 .mobile-close {
   position: absolute;
@@ -1126,6 +1124,7 @@ p {
   justify-content: flex-start;
   flex-direction: column;
   gap: 40px;
+  flex-grow: 1;
 }
 .mobile-logo {
   font-weight: 700;
@@ -1133,6 +1132,10 @@ p {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.focus-std {
+  position: relative;
+  color: #404bbf;
 }
 .focus-std:hover,
 .focus-std:focus {
@@ -1145,7 +1148,6 @@ p {
   gap: 24px;
 }
 .mobile-address {
-  margin-top: 168px;
   margin-bottom: 48px;
 }
 
@@ -1171,6 +1173,10 @@ p {
   cursor: pointer;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tel-mobile {
+  position: relative;
+  color: #404bbf;
 }
 .mobile-address-list:hover,
 .mobile-address-list:focus {
