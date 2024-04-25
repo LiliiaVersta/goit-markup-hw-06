@@ -669,7 +669,7 @@ p {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
-  text-align: start;
+  text-align: center;
 }
 .footer-ul {
   display: flex;
@@ -751,6 +751,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin: 0 auto;
   border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
@@ -825,7 +826,9 @@ p {
     background-color: #2e2f42;
     padding: 120px 0;
   }
-
+  .container-logo {
+    margin-right: 120px;
+  }
   .footer-container {
     width: 1158px;
     align-items: baseline;
@@ -833,6 +836,9 @@ p {
   }
   .content-media {
     margin-right: 120px;
+  }
+  .subscribe {
+    margin-top: unset;
   }
 }
 /* Modal window */
